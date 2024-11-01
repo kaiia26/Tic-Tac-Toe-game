@@ -1,11 +1,26 @@
+h1, h2, h4 {
+    text-align: center;
+}
+
+
+
 .row {
     width: 90%;
-    background-color: red;
     height: 150px;
     margin: auto;
+    display: flex;
 
 }
 
 .row-1, .row-2 {
     border-bottom: 5px black solid;
+}
+
+.col-1, .col-2 {
+    border-right: 5px black solid;
+
+}
+
+.box {
+    width: 33.333%
 }
