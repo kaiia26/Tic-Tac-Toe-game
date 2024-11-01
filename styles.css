@@ -1,0 +1,11 @@
+.row {
+    width: 90%;
+    background-color: red;
+    height: 150px;
+    margin: auto;
+
+}
+
+.row-1, .row-2 {
+    border-bottom: 5px black solid;
+}
