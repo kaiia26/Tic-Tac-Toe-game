@@ -40,32 +40,24 @@ function checkWin(val) {
         }
     }
 
-
-
-
-$(".box").on("click", function() {
-    if (turn === 1) {
-        $(this).text("X")
-        $(this).addClass("X")
-        turn = 2
-       if (checkWin("X")) {
-        p1Score++
-        $("#p-1 wins").text(p1Score)
-       } else checkTie()
-    } else {
-        $(this).text("O")
-        $(this).addClass("O")
-        turn = 1
-        if (checkWin("X")) {
-            p2Score++
-            $("#p-2 wins").text(p2Score)
-           
-        } else checkTie()
-
-        
-    }
-    $("#turn").text(turn)
-
-    }
+    $(".box").on("click", function() {
+        if (turn === 1) {
+            $(this).text("X");
+            $(this).addClass("X");
+            turn = 2;
+            if (checkWin("X")) {
+                p1Score++;
+                $("p-1 wins").text(p1Score);
+            }
+        } else {
+            $(this).text("O");
+            $(this).addClass("O");
+            turn = 1;
+            if (checkWin("O")) {
+                p2Score++;
+                $("p-2 wins").text(p2Score);
+            }
+        }
+        $("#turn").text(turn);
+    });
     
-);
