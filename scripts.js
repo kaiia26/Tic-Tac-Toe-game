@@ -5,12 +5,12 @@ var turn = 1;
 
 function checkWin(val) {
     if (
-        $(".row-1 .box" + val).length === 3 ||
-        $(".row-2 .box" + val).length === 3 ||
-        $(".row-3 .box" + val).length === 3 ||
-        $(".col-1.X" + val).length === 3 ||
-        $(".col-2.X" + val).length === 3 ||
-        $(".col-3.X" + val).length === 3 ||
+        $(".row-1 .box." + val).length === 3 ||
+        $(".row-2 .box." + val).length === 3 ||
+        $(".row-3 .box." + val).length === 3 ||
+        $(".col-1." + val).length === 3 ||
+        $(".col-2." + val).length === 3 ||
+        $(".col-3." + val).length === 3 ||
         (
             $("#1").hasClass(val) &&
             $("#5").hasClass(val) &&
@@ -47,7 +47,7 @@ function checkWin(val) {
             turn = 2;
             if (checkWin("X")) {
                 p1Score++;
-                $("p-1 wins").text(p1Score);
+                $("#p-1 wins").text(p1Score);
             }
         } else {
             $(this).text("O");
@@ -55,7 +55,7 @@ function checkWin(val) {
             turn = 1;
             if (checkWin("O")) {
                 p2Score++;
-                $("p-2 wins").text(p2Score);
+                $("#p-2 wins").text(p2Score);
             }
         }
         $("#turn").text(turn);
