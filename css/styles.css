@@ -2,8 +2,6 @@ h1, h2, h4 {
     text-align: center;
 }
 
-
-
 .row {
     width: 90%;
     height: 150px;
@@ -26,4 +24,15 @@ h1, h2, h4 {
     text-align: center;
     font-size: 4rem;
     padding-top: 40px;
+    border: black solid;
+}
+
+.X {
+    color: blue;
+    font-family: comic sans ms, cursive; 
+}
+
+.O {
+    color: red;
+    font-family: comic sans ms, cursive;
 }
